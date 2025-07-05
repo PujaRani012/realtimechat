@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp - Chat Room</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="chat-header-content">
+                <button class="btn btn-ghost" onclick="goBack()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m12 19-7-7 7-7"/>
+                        <path d="M19 12H5"/>
+                    </svg>
+                </button>
+                <div class="chat-user-info">
+                    <div class="avatar">JD</div>
+                    <div>
+                        <h3>Jane Doe</h3>
+                        <span class="status online">Online</span>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="btn btn-ghost">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="1"/>
+                            <circle cx="19" cy="12" r="1"/>
+                            <circle cx="5" cy="12" r="1"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <main class="chat-main">
+            <div class="messages-container" id="messagesContainer">
+                <!-- Messages will be populated by JavaScript -->
+            </div>
+        </main>
+        
+        <footer class="chat-footer">
+            <form class="message-form" id="messageForm">
+                <div class="message-input-container">
+                    <input type="text" id="messageInput" placeholder="Type a message..." required>
+                    <button type="submit" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m22 2-7 20-4-9-9-4Z"/>
+                            <path d="M22 2 11 13"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

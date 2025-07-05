@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>ChatApp</h1>
+                <div class="user-menu">
+                    <span class="user-name">John Doe</span>
+                    <button class="btn btn-secondary" onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </header>
+        
+        <main class="dashboard-main">
+            <div class="dashboard-content">
+                <div class="dashboard-section">
+                    <h2>Online Users</h2>
+                    <div class="users-grid" id="onlineUsers">
+                        <!-- Online users will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="dashboard-section">
+                    <h2>Recent Chats</h2>
+                    <div class="chat-list" id="recentChats">
+                        <!-- Recent chats will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
